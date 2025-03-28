@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  
+  <div class="container">
+    <header>
+      <h1>🌤 Weather Dashboard</h1>
+      <button id="themeToggle">Toggle Theme</button>
+    </header>
+
+    <section class="search">
+      <input type="text" id="cityInput" placeholder="Enter city name..." />
+      <button id="searchBtn">Search</button>
+    </section>
+
+    <section id="weatherDisplay" class="weather-card hidden">
+      <h2 id="locationName"></h2>
+      <img id="weatherIcon" alt="weather icon" />
+      <p id="temperature"></p>
+      <p id="description"></p>
+      <p id="extraInfo"></p>
+    </section>
+
+    <section class="saved-locations">
+      <h3>Saved Locations</h3>
+      <ul id="savedList"></ul>
+    </section>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="utils/weatherAPI.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

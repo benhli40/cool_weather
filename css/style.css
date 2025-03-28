@@ -1,0 +1,80 @@
+:root {
+  --bg: #f0f2f5;
+  --text: #333;
+  --card-bg: white;
+}
+
+body.dark {
+  --bg: #1e1e2f;
+  --text: #f9fafb;
+  --card-bg: #2c2c3b;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 2rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  margin-top: 2rem;
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  flex: 1;
+}
+
+button {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.weather-card {
+  margin-top: 2rem;
+  padding: 20px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.saved-city {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.delete-saved {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.saved-locations {
+  margin-top: 2rem;
+}
